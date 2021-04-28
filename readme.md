@@ -1,11 +1,17 @@
 ﻿# Vending Machine Kata
 
 >```git clone git@github.com:cieclarke/OscarEcho.git myfolder```
+
 >```cd myfolder```
+
 >```dotnet build```
+
 >```dotnet test -t```
+
 >```dotnet test```
+
 >```dotnet run```
+
 
 ## Notes
 
