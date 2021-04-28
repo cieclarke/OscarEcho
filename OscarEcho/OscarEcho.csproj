@@ -3,9 +3,36 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <StartupObject>OscarEcho.Program</StartupObject>
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ScenarioThree\" />
+    <Folder Include="VMK\" />
+    <Folder Include="VMK\Models\" />
+    <Folder Include="VMK\Tests\" />
+    <Folder Include="VMK\Models\Snacks\" />
+    <Folder Include="VMK\Models\Builder\" />
+    <Folder Include="VMK\Models\Coins\" />
+    <Folder Include="VMK\Models\Payment\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="ScenarioThree\ItemList.cs" />
+    <Compile Remove="ScenarioThree\Item.cs" />
+    <Compile Remove="ScenarioOne\Node.cs" />
+    <Compile Remove="ScenarioOne\SkipListNode.cs" />
+    <Compile Remove="ScenarioOne\SkipList.cs" />
+    <Compile Remove="ScenarioOne\SkipListNodeList.cs" />
+    <Compile Remove="ScenarioOne\NodeList.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
+    <PackageReference Include="MSTest.TestAdapter" Version="2.2.3" />
+    <PackageReference Include="MSTest.TestFramework" Version="2.2.3" />
+    <PackageReference Include="Microsoft.TestPlatform" Version="16.9.4" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="VMK\.DS_Store" />
+    <None Remove=".DS_Store" />
   </ItemGroup>
 </Project>
