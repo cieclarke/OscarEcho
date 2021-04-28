@@ -1,4 +1,4 @@
-﻿#Vending Machine Kata
+﻿# Vending Machine Kata
 
 >```git clone git@github.com:cieclarke/OscarEcho.git myfolder```
 >```cd myfolder```
@@ -16,5 +16,7 @@ The `Slot` object is analogues to the spiral in a vending machine. `Snacks` are 
 Payments are using GBP.
 
 ## Development notes
+
+Code is in the folder `OscarEcho/VMK`
 
 Breaking down the functionaltiy of the vending machine could be done by component. Refactor the VendingMachine class to objects like `ChangeBox`, `Stock` etc. It would make the testing less functional and break it more into units.
