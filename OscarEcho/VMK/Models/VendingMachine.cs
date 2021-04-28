@@ -83,7 +83,7 @@ namespace OscarEcho.VMK.Models
                 .Select(c => new { Coin = c.Key.Name, Worth = c.Key.Worth, Count = c.ToList().Count }).OrderBy(c => c.Worth).Reverse();
 
             
-            while (difference > 0)
+            while (difference > 0 && AvailableChange.Count > 0)
             {
                 difference = Math.Round(difference, 2);
                 foreach (var cg in coinGroups)
