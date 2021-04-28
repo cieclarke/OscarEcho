@@ -25,4 +25,4 @@ Payments are using GBP.
 
 Code is in the folder `OscarEcho/VMK`
 
-Breaking down the functionaltiy of the vending machine could be done by component. Refactor the VendingMachine class to objects like `ChangeBox`, `Stock` etc. It would make the testing less functional and break it more into units.
+Breaking down the functionaltiy of the vending machine could be done by component. Refactor the VendingMachine class to objects like `ChangeBox`, `CoinSlotAnalyser`, `Stock` etc. It would make the testing less functional and break it more into units.
