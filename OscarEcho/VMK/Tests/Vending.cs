@@ -82,6 +82,21 @@ namespace OscarEcho.VMK.Tests
         }
 
         [TestMethod]
+        public void PurchaseCheckStock()
+        {
+            var stockCountBefore = vm.Slots.Find(s => s.Code == "A1").Snacks.Count;
+
+            vm.MakePayment(new FiftyPence());
+            vm.MakePayment(new FivePence());
+            vm.MakePayment(new FivePence());
+            var isPurchased = vm.MakePurchase("A1");
+
+            var stockCountAfter = vm.Slots.Find(s => s.Code == "A1").Snacks.Count;
+
+            Assert.AreEqual(stockCountBefore, stockCountAfter + 1);
+        }
+
+        [TestMethod]
         public void MakeOverFundedPurchase()
         { 
             vm.MakePayment(new FiftyPence());
@@ -170,5 +185,7 @@ namespace OscarEcho.VMK.Tests
 
 
         }
+
+
     }
 }
